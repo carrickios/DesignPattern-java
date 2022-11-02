@@ -1,4 +1,4 @@
-package UserDefineObserver.Observer;
+package UserDefineObserver.Datas;
 public interface DisplayElement {
     public void display();
 }

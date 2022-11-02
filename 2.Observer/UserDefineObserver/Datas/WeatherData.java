@@ -1,4 +1,4 @@
-package UserDefineObserver.Observer;
+package UserDefineObserver.Datas;
 import java.util.ArrayList;
 
 public class WeatherData implements Subject{

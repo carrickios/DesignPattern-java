@@ -1,6 +1,6 @@
 package UserDefineObserver;
+import UserDefineObserver.Datas.WeatherData;
 import UserDefineObserver.Display.CurrentCoditionsDisplay;
-import UserDefineObserver.Observer.WeatherData;
 
 public class WeatherStation {
     public static void main(String[] args) {

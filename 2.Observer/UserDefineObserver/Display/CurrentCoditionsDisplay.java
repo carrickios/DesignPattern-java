@@ -1,8 +1,8 @@
 package UserDefineObserver.Display;
 
-import UserDefineObserver.Observer.DisplayElement;
-import UserDefineObserver.Observer.Observer;
-import UserDefineObserver.Observer.Subject;
+import UserDefineObserver.Datas.DisplayElement;
+import UserDefineObserver.Datas.Observer;
+import UserDefineObserver.Datas.Subject;
 
 public class CurrentCoditionsDisplay implements Observer, DisplayElement{
     private float temperature;

@@ -1,4 +1,4 @@
-package SystemObserver.Observer;
+package SystemObserver.Datas;
 
 import java.util.Observable;
 

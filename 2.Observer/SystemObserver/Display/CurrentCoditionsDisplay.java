@@ -2,8 +2,9 @@ package SystemObserver.Display;
 
 import java.util.Observable;
 import java.util.Observer;
-import SystemObserver.Observer.DisplayElement;
-import SystemObserver.Observer.WeatherData;
+
+import SystemObserver.Datas.DisplayElement;
+import SystemObserver.Datas.WeatherData;
 
 
 public class CurrentCoditionsDisplay implements Observer, DisplayElement {

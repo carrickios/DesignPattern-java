@@ -1,4 +1,4 @@
-package UserDefineObserver.Observer;
+package UserDefineObserver.Datas;
 /**
  * Subject
  */

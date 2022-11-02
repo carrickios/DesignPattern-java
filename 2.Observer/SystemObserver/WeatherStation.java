@@ -1,10 +1,9 @@
 package SystemObserver;
 
+import SystemObserver.Datas.WeatherData;
 import SystemObserver.Display.CurrentCoditionsDisplay;
-import SystemObserver.Observer.WeatherData;
 
 public class WeatherStation {
-
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentCoditionsDisplay currentCoditionsDisplay = new CurrentCoditionsDisplay(weatherData);

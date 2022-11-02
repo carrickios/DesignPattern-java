@@ -1,4 +1,4 @@
-package SystemObserver.Observer;
+package SystemObserver.Datas;
 
 public interface DisplayElement {
     public void display();
