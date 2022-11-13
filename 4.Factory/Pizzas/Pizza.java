@@ -1,25 +1,27 @@
 package Pizzas;
 import java.util.ArrayList;
 
+import Ingredient.Cheese;
+import Ingredient.Clams;
+import Ingredient.Dough;
+import Ingredient.Pepperoni;
+import Ingredient.Sauce;
+import Ingredient.Veggies;
+
 public abstract class Pizza {
     
     String name;
-    String dough;
-    String sauce;
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clam;
 
     ArrayList <String>toppings = new ArrayList<>();
     
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding souce...");
-        System.out.println("Adding toppings...");
-
-        for (int i = 0; i < toppings.size(); i++) {
-            System.out.println("  " + toppings.get(i));
-        }
-    }
-
+    public abstract void prepare();
+    
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
