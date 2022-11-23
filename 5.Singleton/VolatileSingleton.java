@@ -11,7 +11,7 @@ public class VolatileSingleton {
 
     private VolatileSingleton() {};
 
-    public VolatileSingleton getInstance() {
+    public static VolatileSingleton getInstance() {
         if (uniqueInstance == null) {
             synchronized (VolatileSingleton.class) {
                 if (uniqueInstance == null) {
