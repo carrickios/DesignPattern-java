@@ -49,6 +49,7 @@ public class RemoteControl {
     }
 
     public void undoButtonWasPushed() {
+        System.out.println("RemoteControl undoButtonWasPushed");
         undoCommand.undo();
     }
 

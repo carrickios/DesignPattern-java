@@ -1,5 +1,8 @@
+import Command.Command;
 import Command.LightOffCommand;
 import Command.LightOnCommand;
+import Command.MacroCommand;
+import Command.NoCommand;
 import Command.StereoOffWithCDCommand;
 import Command.StereoOnWithCDCommand;
 import Receiver.Light;
@@ -36,6 +39,25 @@ public class RemoteControlTest {
         }
         
         remoteControl.undoButtonWasPushed();
+        Command[] commands = new Command[2];
+        commands[0] = lightOnCommand;
+        commands[1] = stereoOnWithCDCommand;
+        MacroCommand macroCommand = new MacroCommand(commands);
 
+        NoCommand noCommand = new NoCommand();
+
+        try {
+            remoteControl.setCommand(2, macroCommand, noCommand);    
+        } catch (Exception e) {
+        
+        }
+        
+        try {
+            remoteControl.onButtonWasPushed(2);
+        } catch (Exception e) {
+            
+        }
+
+        remoteControl.undoButtonWasPushed();
     }
 }

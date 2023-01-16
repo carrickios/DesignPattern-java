@@ -23,7 +23,7 @@ public class Light {
     }
 
     public void off() {
-        System.out.println(name + "Light off");
+        System.out.println(name + " Light off");
     }
     
 }
