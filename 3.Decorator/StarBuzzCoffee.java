@@ -24,5 +24,6 @@ public class StarBuzzCoffee {
                 new Whip(
                     new Whip(beverage3))));
         System.out.println(beverage3.getDescription() + " $" + beverage3.cost());
+        
     }
 }
